@@ -1,0 +1,13 @@
+.env
+*.log
+*.npy
+*.txt
+*.h5
+*.pyc
+*.pt
+*.png
+venv*/
+scripts/record/pondlet_hsk3_predict_diff_*.csv
+settings.json
+.env.hsk3
+results/checkpoint-*

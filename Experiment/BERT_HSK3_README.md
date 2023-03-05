@@ -1,20 +1,8 @@
-<div align="center">
-
-# ML HSK3 article level predictor
-
-</div>
-
-## 2022/07/18 透過 BERT 訓練 HSK3 level predictor
-
-- HSK3 level predictor `Accuracy`, `F1` 達 `96%`
-- [Classification Report](label_修正後_分類報告.jpg)
-- [Confusion Matrix](label_修正後_混淆矩陣.jpeg)
-
-## BERT training workflow
+# BERT training workflow
 
 ## 建立環境
 
-```bash
+```bash=
 python3.8 -m venv venv38
 source venv38/bin/activate
 python3 -m pip install --upgrade pip
@@ -23,7 +11,8 @@ pip install -r requirements.txt
 
 ## 取得訓練資料
 
-```bash
+```bash=
+
 # 啟動環境變數
 source .env.hsk3
 
@@ -44,11 +33,10 @@ python3 label_correction.py \
 python3 bert_preprocessing.py \
 --input_csv pondlet_STB_HSK3_20220614_new_with_review_label.csv \
 --output_csv pondlet_STB_HSK3_20220714_content_data.csv
+
 ```
 
 ## 訓練
 
-```bash
 cd scripts
 python bert_training_hsk3.py
-```

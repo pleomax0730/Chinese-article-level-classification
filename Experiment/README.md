@@ -1,14 +1,8 @@
-<div align="center">
-
 # ML HSK3 article level predictor
-
-</div>
 
 ## 2022/07/18 透過 BERT 訓練 HSK3 level predictor
 
 - HSK3 level predictor `Accuracy`, `F1` 達 `96%`
-- [Classification Report](label_修正後_分類報告.jpg)
-- [Confusion Matrix](label_修正後_混淆矩陣.jpeg)
 
 ## BERT training workflow
 
